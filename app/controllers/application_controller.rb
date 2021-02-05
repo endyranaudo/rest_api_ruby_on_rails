@@ -1,8 +1,8 @@
-class ApplicationController < ActionController::API
+# frozen_string_literal: true
 
-  def render(options={})
+class ApplicationController < ActionController::API
+  def render(options = {})
     options[:json] = serializer.new(options[:json])
     super(options)
   end
-  
 end

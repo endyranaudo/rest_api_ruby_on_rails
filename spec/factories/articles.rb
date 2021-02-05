@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :article do
     # sequence() allows us to have each instance with dynamic progressive content so each property will be unique
